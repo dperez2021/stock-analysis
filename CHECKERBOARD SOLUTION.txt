@@ -1,0 +1,17 @@
+Sub checkerboard()
+
+    For r = 1 To 8 'r => 8
+    
+        For c = 1 To 8 'c => 8
+        
+            If (r + c) Mod 2 = 0 Then
+            
+                Cells(r, c).Interior.Color = RGB(200, 0, 0) 'Red
+            Else
+                Cells(r, c).Interior.Color = RGB(0, 0, 0) 'Black
+            End If
+
+        Next
+    Next
+
+End Sub
